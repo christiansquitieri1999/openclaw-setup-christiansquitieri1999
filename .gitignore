@@ -30,6 +30,7 @@
 .openclaw/workspace-attestations/*.attested
 .openclaw/agents/main/sessions/*.trajectory-path.json
 .openclaw/openclaw-connection/**
+.openclaw/workspace
 .openclaw/workspace/**
 
 # Local machine noise
