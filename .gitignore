@@ -1,0 +1,21 @@
+# Secret-bearing local config files
+.openclaw/openclaw.json
+.openclaw/openclaw.json.bak
+.openclaw/openclaw.json.bak.*
+.openclaw/openclaw.json.last-good
+
+# OpenClaw credentials and sensitive logs/snapshots
+.openclaw/credentials/*.json
+.openclaw/logs/config-audit.jsonl
+.openclaw/cache/shell-snapshots/*.sh
+
+# Conversation/session artifacts may contain pasted secrets
+.openclaw/agents/main/sessions/*.jsonl
+.openclaw/agents/main/sessions/*.trajectory.jsonl
+.openclaw/agents/main/sessions/skills-prompts/**
+
+# OAuth and API credentials
+.mcporter/credentials.json
+
+# Shell history can contain pasted tokens
+.bash_history
