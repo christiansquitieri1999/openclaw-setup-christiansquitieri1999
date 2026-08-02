@@ -13,7 +13,6 @@
 .openclaw/agents/main/sessions/*.jsonl
 .openclaw/agents/main/sessions/*.trajectory.jsonl
 .openclaw/agents/main/sessions/skills-prompts/**
-.openclaw/agents/main/sessions/sessions.json
 
 # OAuth and API credentials
 .mcporter/credentials.json
@@ -30,8 +29,6 @@
 .openclaw/workspace-attestations/*.attested
 .openclaw/agents/main/sessions/*.trajectory-path.json
 .openclaw/openclaw-connection/**
-.openclaw/workspace
-.openclaw/workspace/**
 
 # Local machine noise
 .wget-hsts
