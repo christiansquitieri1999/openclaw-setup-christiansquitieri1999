@@ -19,3 +19,23 @@
 
 # Shell history can contain pasted tokens
 .bash_history
+
+# OpenClaw runtime/state noise
+.openclaw/agents/main/agent/*.sqlite
+.openclaw/agents/main/agent/*.sqlite-*
+.openclaw/state/*.sqlite
+.openclaw/state/*.sqlite-*
+.openclaw/tui/last-session.json
+.openclaw/workspace-attestations/*.attested
+.openclaw/agents/main/sessions/*.trajectory-path.json
+.openclaw/openclaw-connection/**
+
+# Local machine noise
+.wget-hsts
+.lesshst
+.copilot/**
+.log_execution/**
+.npm/**
+.ssh/**
+.vscode-server/**
+snap/**
