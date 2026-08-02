@@ -27,8 +27,8 @@
 .openclaw/state/*.sqlite-*
 .openclaw/tui/last-session.json
 .openclaw/workspace-attestations/*.attested
-.openclaw/agents/main/sessions/*.trajectory-path.json
-.openclaw/openclaw-connection/**
+.openclaw/agents/main/sessions/*.catalog.json.
+
 
 # Local machine noise
 .wget-hsts
