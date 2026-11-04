@@ -2,7 +2,11 @@
 .openclaw/openclaw.json
 .openclaw/openclaw.json.bak
 .openclaw/openclaw.json.bak.*
+.openclaw/openclaw.json.bak-*
+.openclaw/openclaw.json.clobbered.*
 .openclaw/openclaw.json.last-good
+.openclaw/secrets/
+.openclaw/agents/main/agent/plugins/litellm/catalog.json
 
 # OpenClaw credentials and sensitive logs/snapshots
 .openclaw/credentials/*.json
@@ -10,9 +14,7 @@
 .openclaw/cache/shell-snapshots/*.sh
 
 # Conversation/session artifacts may contain pasted secrets
-.openclaw/agents/main/sessions/*.jsonl
-.openclaw/agents/main/sessions/*.trajectory.jsonl
-.openclaw/agents/main/sessions/skills-prompts/**
+.openclaw/agents/main/sessions/
 
 # OAuth and API credentials
 .mcporter/credentials.json
@@ -27,8 +29,10 @@
 .openclaw/state/*.sqlite-*
 .openclaw/tui/last-session.json
 .openclaw/workspace-attestations/*.attested
-.openclaw/agents/main/sessions/*.catalog.json.
-
+.openclaw/completions/
+.openclaw/workspace/.clawhub/
+.openclaw/workspace/memory/
+.openclaw/workspace/openclaw-workspace-state.json
 
 # Local machine noise
 .wget-hsts
@@ -39,3 +43,6 @@
 .ssh/**
 .vscode-server/**
 snap/**
+.cache/copilot/
+.config/Code/
+.dotnet/
