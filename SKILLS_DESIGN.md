@@ -114,3 +114,31 @@ delivery result, not only a dry run.
   the plan document, six Calendar blocks, and Telegram delivery.
 - Keep private test payloads and service receipts out of committed skill files.
 - Commit this design before creating skill implementations.
+
+## Delivery verification
+
+- This three-skill design was committed as `9f49741` before implementation.
+- All three skills were discovered as ready, model-visible workspace skills.
+- Real-input agent tests used the user's learning question and approved project
+  time allocation, not placeholder prompts.
+- The operational Google Doc was read back and matched the approved content;
+  its destination folder was verified.
+- Six unique Calendar events were read back: 12 hours total, four per project,
+  with approved dates, private visibility, and no reminders.
+- The approved private Telegram recap returned a successful non-dry-run
+  delivery receipt. Private payloads and receipts are not committed here.
+- Seven focused tests pass:
+  `node --test .openclaw/workspace/skills/weekly-plan/scripts/check-plan.test.mjs`
+  from the main repository root.
+- Two consecutive serial `openclaw doctor --non-interactive` runs completed
+  without health errors after an earlier three-second health probe timeout.
+  The gateway also passed its separate connectivity probe. The transient
+  timeout's root cause was not established; no gateway patch was applied.
+  Load the configured environment in the same shell before running doctor,
+  and do not publish the environment file or its values.
+- Delivery tracks the five configuration files and three skills as ordinary
+  files under `.openclaw/workspace/`, replacing the previous gitlink. The local
+  nested Git metadata is preserved but is not part of the delivery.
+- No new external API or OAuth connection was added for these skills. The
+  existing Zapier connection had been re-authenticated during earlier repair.
+- Delivery commits are local until publication is explicitly approved.
