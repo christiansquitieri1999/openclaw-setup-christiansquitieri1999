@@ -46,3 +46,16 @@ snap/**
 .cache/copilot/
 .config/Code/
 .dotnet/
+
+# 4Geeks student token - MAI committare
+.4geeks_token
+*.token
+
+# Dati locali OpenClaw non pubblici
+.openclaw/devices/
+.openclaw/media/
+.openclaw/workspace/config/
+
+# Cache Python
+__pycache__/
+*.pyc

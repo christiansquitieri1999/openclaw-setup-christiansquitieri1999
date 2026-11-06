@@ -1,0 +1,29 @@
+# Credenziali e segreti — MAI committare
+.4geeks_token
+*_token
+*.token
+.env
+.env.*
+secrets.json
+config/mcporter.json
+
+# Memoria e note personali (non pubbliche)
+memory/
+MEMORY.md
+
+# File di log e stato locale
+*.log
+HEARTBEAT.md
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# ClawHub lock e metadati
+.clawhub/
+skills/*/.clawhub/
+
+# Backup e file temporanei
+*.bak
+*.bak-*
+*.tmp
